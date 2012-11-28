@@ -111,7 +111,15 @@ public class HomeController {
         if(clientData == null || clientData.isEmpty()){
         	bc.broadcast(new Film("Mizerabilii"));
         }else{
-        	bc.broadcast(clientData + "- Back from server.");
+        	int max=5;
+        	for (int i = 0; i < max; i++) {
+        		bc.broadcast(clientData + "- Back from server " + i + "/" + max);
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
         }
 	}
 	
