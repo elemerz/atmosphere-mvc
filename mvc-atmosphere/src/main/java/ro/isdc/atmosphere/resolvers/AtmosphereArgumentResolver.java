@@ -1,4 +1,4 @@
-package com.keaplogik.atmosphere.resolvers;
+package ro.isdc.atmosphere.resolvers;
 
 import javax.servlet.http.HttpServletRequest;
 
